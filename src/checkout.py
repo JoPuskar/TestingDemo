@@ -8,9 +8,9 @@
 # From the user's perspective, the feature is:
 #   "I have items in my cart. I click Checkout. My order is confirmed,
 #    my cart is cleared, and I receive a confirmation."
+# import inventory
 
 import cart
-import inventory
 import orders
 
 
