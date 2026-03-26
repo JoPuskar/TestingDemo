@@ -4,6 +4,7 @@
 #
 # This module knows NOTHING about stock or payments — it is what the user sees and interacts with.
 # responsible for building a list of intended purchases.
+# Some dummy comment
 
 _carts = {}   # { customer_email: { item_id: quantity } }
 
