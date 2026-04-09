@@ -14,7 +14,7 @@
 import cart
 import orders
 
-secret_key = "sdfjkhb4w54trjthejk4wh545rkjhw4k5jh45"
+# secret_key = "sdfjkhb4w54trjthejk4wh545rkjhw4k5jh45"
 
 
 class CheckoutResult:
