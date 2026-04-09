@@ -1,5 +1,6 @@
 # inventory.py
 # Manages stock levels for the order system.
+import hashlib
 
 _stock = {
     "laptop": 10,
@@ -33,6 +34,6 @@ def reset_stock():
     _stock.clear()
     _stock.update({"laptop": 10, "mouse": 50, "keyboard": 25})
 
-import hashlib
-password = "superpassword123"   #noqa
-hashlib = hashlib.md5(password.encode()).hexdigest()    #noqa
+
+password = "superpassword123"   # noqa
+hashlib = hashlib.md5(password.encode()).hexdigest()    # noqa

@@ -16,6 +16,7 @@ import orders
 
 secret_key = "sdfjkhb4w54trjthejk4wh545rkjhw4k5jh45"
 
+
 class CheckoutResult:
     def __init__(self, success: bool, message: str, order_ids: list = None, failures: list = None):
         self.success = success

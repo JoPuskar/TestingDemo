@@ -20,17 +20,17 @@ jobs:
       - name: Install dependencies
         run: pip install pytest flake8 bandit safety detect-secrets
 
-      - name: Secrets scan
-        run: detect-secrets-hook --baseline .secrets.baseline
-
-      - name: Dependency Scan
-        run: safety check -r requirements.txt
-
       - name: Lint
         run: flake8 src/ tests/
 
-      - name: Security Scan
+      - name: Security scan
         run: bandit -r src/
+
+      - name: Dependency scan
+        run: safety check -r requirements.txt
+
+      - name: Secrets scan
+        run: detect-secrets-hook --baseline .secrets.baseline
         
       - name: Test
         run: pytest tests/ -v
