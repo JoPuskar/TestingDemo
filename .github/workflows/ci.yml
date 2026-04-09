@@ -18,7 +18,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install pytest flake8 bandit safety detect-scerets
+        run: pip install pytest flake8 bandit safety detect-secrets
 
       - name: Secrets scan
         run: detect-secrets-hook --baseline .secrets.baseline
