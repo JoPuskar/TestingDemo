@@ -34,6 +34,3 @@ def reset_stock():
     _stock.clear()
     _stock.update({"laptop": 10, "mouse": 50, "keyboard": 25})
 
-
-password = "superpassword123"   # noqa
-hashlib = hashlib.md5(password.encode()).hexdigest()    # noqa
